@@ -1,0 +1,9 @@
+<h1>New Restaurant</h1>
+
+<%= simple_form_for @restaurant do |form| %>
+  <%= form.input :name %>
+  <%= form.input :address %>
+  <%= form.input :phone_number %>
+  <%= form.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
+  <%= form.submit 'Create Restaurant' %>
+<% end %>
